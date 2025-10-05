@@ -248,9 +248,9 @@ class TelegramBot:
     def create_buy_keyboard(self):
         """Создание клавиатуры для пополнения"""
         keyboard = [
-            [InlineKeyboardButton("⭐ 35 звезд (35 фото)", callback_data="buy_35")],
-            [InlineKeyboardButton("⭐⭐ 70 звезд (70 фото)", callback_data="buy_70")],
-            [InlineKeyboardButton("⭐⭐⭐ 105 звезд (105 фото)", callback_data="buy_105")],
+            [InlineKeyboardButton("⭐ 35 звезд (1 фото)", callback_data="buy_35")],
+            [InlineKeyboardButton("⭐⭐ 70 звезд (2 фото)", callback_data="buy_70")],
+            [InlineKeyboardButton("⭐⭐⭐ 105 звезд (3 фото)", callback_data="buy_105")],
             [InlineKeyboardButton("💫 Своя сумма", callback_data="buy_custom")],
             [InlineKeyboardButton("🔙 Назад", callback_data="main_menu")]
         ]
@@ -926,4 +926,5 @@ if __name__ == "__main__":
         bot.run()
 
     except Exception as e:
+
         print(f"❌ Ошибка запуска: {e}")
