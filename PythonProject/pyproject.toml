@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telegram-bot"
+version = "1.0.0"
+dependencies = [
+    "python-telegram-bot==20.7",
+    "pillow==10.0.1",
+    "flask==2.3.3"
+]
